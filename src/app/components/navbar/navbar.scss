@@ -1,0 +1,44 @@
+/* Barra lateral */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;        /* ocupa toda la altura */
+  width: 320px;         /* ancho de la barra */
+  background-color: #1111119d;
+  border-right: 1px solid #575656a2;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Links */
+.sidebar-link {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 10px 15px;
+  margin-bottom: 30px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  display: block;
+}
+
+/* Hover */
+.sidebar-link:hover {
+  color: #956afa;
+  transform: translateX(5px);
+}
+
+/* Link activo */
+.sidebar-link.active {
+  background-color: #111;
+  color: #956afa;
+}
+
+/* Contenido principal desplazado para que no quede debajo de la sidebar */
+.main-content {
+  margin-left: 220px; /* igual al ancho de la barra + padding */
+  padding: 20px;
+}
